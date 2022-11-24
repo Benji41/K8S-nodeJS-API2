@@ -1,11 +1,9 @@
 {
   "name": "server",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "EQUIPO 3",
+  "author": "EQUIPO DOCKERIZADO ORQUESTADO",
   "license": "ISC",
   "dependencies": {
     "express": "4.16.3",
@@ -14,6 +12,8 @@
     "nodemon": "1.18.3",
     "body-parser": "*"
   },
-  "devDependencies": {},
-  "description": ""
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  }
 }

@@ -2,8 +2,6 @@ cd client
 docker build -f Dockerfile.dev -t benji41/multi-client .
 docker run -it -p 4002:3000 benji41/multi-client
 
-docker build -f Dockerfile.dev -t stylerhun/multi-client .
-docker run -it -p 4002:3000 stylerhun/multi-client
 
 cd server
 docker build -f Dockerfile.dev -t benji41/multi-server .
