@@ -1,13 +1,13 @@
 cd client
-docker build -f Dockerfile.dev -t carolinabermudez/multi-client .
-docker run -it -p 4002:3000 carolinabermudez/multi-client
+docker build -f Dockerfile.dev -t benji41/multi-client .
+docker run -it -p 4002:3000 benji41/multi-client
 
 docker build -f Dockerfile.dev -t stylerhun/multi-client .
 docker run -it -p 4002:3000 stylerhun/multi-client
 
 cd server
-docker build -f Dockerfile.dev -t carolinabermudez/multi-server .
-docker run -it -p 4003:5000 carolinabermudez/multi-server
+docker build -f Dockerfile.dev -t benji41/multi-server .
+docker run -it -p 4003:5000 benji41/multi-server
 
 ------
 cd K8S-nodeJS-API2
@@ -15,12 +15,12 @@ docker-compose up --build
 
 ------
 cd client
-docker build -t carolinabermudez/multi-client .
-docker run -it -p 3000:3000 carolinabermudez/multi-client
-docker push carolinabermudez/multi-client
+docker build -t benji41/multi-client .
+docker run -it -p 3000:3000 benji41/multi-client
+docker push benji41/multi-client
 
 -----
 cd server
-docker build -t carolinabermudez/multi-server .
-docker run -it -p 4002:5000 carolinabermudez/multi-server
-docker push carolinabermudez/multi-server
+docker build -t benji41/multi-server .
+docker run -it -p 4002:5000 benji41/multi-server
+docker push benji41/multi-server
